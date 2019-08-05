@@ -78,7 +78,7 @@
 				<section class="box special">
 					<span class="image featured"><img src="images/boris1.jpg" alt="" /></span>
 					<header class="major">
-					<h2>The paper includes two new methods that improve the state-of-the-art in dexterous grasping of novel objects using a single view depth camera.</h2>
+					<h2>The paper uses deep neural networks to improve the state-of-the-art in dexterous grasping of previously unseen objects using a single view camera. </h2>
                 <p></p>
 					</header>
 				</section>
@@ -86,28 +86,42 @@
 				<section class="box special features">
 					<div class="features-row">
 						<section>
-							<span class="icon major fa-file-pdf-o accent2"></span>
+							<span class="icon major fa-file-pdf-o accent1"></span>
 							<h3>Paper</h3>
-                            <p>The paper has been publicly available via this <a href="https://google.com">link</a>.</p>
+                            <p>You can access the manuscript via this <a href="https://google.com">link</a>. To the best of our knowledge, this is the first learned generative-evaluative architecture for dexterous grasping. The generative model is a contact-based method that learns from demonstration. The evaluative model is a deep neural network (Resnet-50 or VGG-16 based) that ranks the generated grasps.</p>
 						</section>
 						<section>
-							<span class="icon major fa-code-fork accent3"></span>
-							<h3>Code & Data</h3>
-                            <p>The grasping simulator is a carefully tuned dexterous grasping environment based on the DLR-II hand. It uses <a href="http://www.mujoco.org"> MuJoCo</a> engine for physics simulation. You can re-run simulated grasps and record videos using this tool. The ability to generate novel grasps on new scenes is coming soon. Click <a href="https://google.com">here</a> for the code and dataset installation instructions.</p>
+							<span class="icon major fa-code-fork accent2"></span>
+							<h3>Code</h3>
+                            <p>DDG is based on a carefully tuned dexterous grasp <a href="https://gitlab.com/rusen/Grasp">simulator</a>, currently supporting the DLR-II hand. It is built on the <a href="http://www.mujoco.org">MuJoCo</a> physics engine. You can re-run simulated grasps and record videos using this tool. Click <a href="https://google.com">here</a> to learn how to install the codebase and use it to re-run grasps. 
+                            The ability to generate novel grasps on new scenes is coming soon.</p>
 						</section>
 					</div>
 					<div class="features-row">
 						<section>
-							<span class="icon major fa-bolt accent4"></span>
-							<h3>PaCMan Project</h3>
-                            <p>This work was supported by the PacMan project, where we built a dishwasher-loading humanoid robot. Click <a href="http://www.pacman-project.eu">here</a> for details.</p>
+							<span class="icon major fa-database accent3"></span>
+							<h3>Dataset</h3>
+                            <p>The data-hungry evaluative models are trained on simulated grasps. We released the two datasets that we used to train evaluative models, containing over 2M grasps. Click <a href="https://google.com">here</a> to download the GM1 dataset (1M), and <a href="https://google.com">here</a> to download GM2 dataset (1M). Refer to the Readme files for on how to use the datasets.</p>
 						</section>
 						<section>
-							<span class="icon major fa-envelope accent5"></span>
+							<span class="icon major fa-thumbs-o-up accent4"></span>
+							<h3>Generative Model</h3>
+                            <p>DDG uses a state-of-the-art grasp generator to sample plausible grasps, given the point cloud of an object. Both generators used in this paper are from <a href="https://github.com/RobotsLab/Golem">Golem Robot Control Framework</a>.</p>
+						</section>
+					</div>
+					<div class="features-row">
+						<section>
+							<span class="icon major fa-cubes accent5"></span>
+							<h3>PacMan Project</h3>
+                            <p>This work was supported by the PacMan project, where we built a dishwasher-loading humanoid robot. Click <a href="www.pacman-project.eu">here</a> for details.</p>
+						</section>
+						<section>
+							<span class="icon major fa-envelope accent6"></span>
 							<h3>Contact</h3>
                             <p>Have any questions, comments? Please don't hesitate to contact us via <a href="mailto:rusenaktas@gmail.com">e-mail</a>.</p>
 						</section>
 					</div>
+
 				</section>
                 <!--
 				<div class="row">
@@ -162,12 +176,12 @@
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
-					<li><a href="https://twitter.com/pacmanprojectEU" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="https://github.com/rusen/CHOP" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://twitter.com/rusen_aktas" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://gitlab.com/rusen/DDG" class="icon fa-github"><span class="label">Github</span></a></li>
 					<li><a href="mailto:rusenaktas@gmail.com" class="icon fa-at"><span class="label">e-mail</span></a></li>
             </ul>
 				<ul class="copyright">
-					<li>&copy; University of Birmingham, 2015. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Umit Rusen Aktas, 2019. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</footer>
 
